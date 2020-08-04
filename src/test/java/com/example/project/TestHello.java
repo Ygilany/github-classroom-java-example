@@ -27,4 +27,11 @@ public class TestHello {
      // undo the binding in System
      System.setOut(originalOut);
    }
+
+   @Test
+    public void GetNumberShouldReturnNumber() {
+       int returnedValue = Hello.getNumber();
+
+       assertEquals(400, returnedValue);
+   }
 }
